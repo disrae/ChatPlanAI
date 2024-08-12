@@ -1,6 +1,6 @@
 {
   "expo": {
-    "scheme": "sellers-dashboard",
+    "scheme": "vision-board",
     "userInterfaceStyle": "automatic",
     "orientation": "default",
     "web": {
@@ -15,10 +15,10 @@
         }
       ]
     ],
-    "name": "sellers-dashboard",
-    "slug": "sellers-dashboard",
+    "name": "vision-board",
+    "slug": "vision-board",
     "ios": {
-      "bundleIdentifier": "com.disrae.sellers-dashboard"
+      "bundleIdentifier": "com.disrae.vision-board"
     }
   }
 }
