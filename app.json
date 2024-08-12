@@ -1,6 +1,6 @@
 {
   "expo": {
-    "scheme": "acme",
+    "scheme": "sellers-dashboard",
     "userInterfaceStyle": "automatic",
     "orientation": "default",
     "web": {
@@ -15,7 +15,10 @@
         }
       ]
     ],
-    "name": "seller-dashboard-v2",
-    "slug": "seller-dashboard-v2"
+    "name": "sellers-dashboard",
+    "slug": "sellers-dashboard",
+    "ios": {
+      "bundleIdentifier": "com.disrae.sellers-dashboard"
+    }
   }
 }
