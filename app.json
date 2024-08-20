@@ -1,6 +1,6 @@
 {
   "expo": {
-    "scheme": "vision-board",
+    "scheme": "chatplanai",
     "userInterfaceStyle": "automatic",
     "orientation": "default",
     "web": {
@@ -15,10 +15,10 @@
         }
       ]
     ],
-    "name": "vision-board",
-    "slug": "vision-board",
+    "name": "chat plan",
+    "slug": "chatplanai",
     "ios": {
-      "bundleIdentifier": "com.disrae.vision-board"
+      "bundleIdentifier": "com.disrae.chatplanai"
     }
   }
 }
