@@ -51,16 +51,17 @@ export default function Component() {
                         </Text>
                         <View className="grid gap-x-6 sm:grid-cols-2 md:grid-cols-3">
                             {["Project Planning", "AI-Powered Summaries", "Collaboration Tools"].map((title, index) => (
-                                <View key={title} className="flex-col my-6 bg-background rounded-lg border">
-                                    <Image
-                                        source={require("../assets/images/example.png")}
-                                        resizeMode="cover"
-                                        className="w-full h-[250px] rounded-lg"
-                                    />
+                                <View key={title} className="flex-col items-center my-6 bg-background rounded-lg bg-primary-light">
                                     <View className="p-4">
                                         <Text className="text-lg font-bold">{title}</Text>
                                         <Text className="text-muted-foreground">See how the app can help you create detailed project plans.</Text>
                                     </View>
+                                    <Image
+                                        source={require("../assets/images/example.png")}
+                                        resizeMode="cover"
+                                        style={{ width: '100%', height: 375 }}
+                                        className="rounded-lg"
+                                    />
                                 </View>
                             ))}
                         </View>
