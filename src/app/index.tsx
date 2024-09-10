@@ -1,5 +1,5 @@
 import { useRouter } from "expo-router";
-import { View, Text, Button, SafeAreaView, TextInput, TouchableOpacity } from "react-native";
+import { View, Text, Button, SafeAreaView, TextInput, TouchableOpacity, ScrollView } from "react-native";
 import { useState } from "react";
 import AntDesign from '@expo/vector-icons/AntDesign';
 import { colors } from "@/styles";
@@ -24,31 +24,33 @@ export default function Home() {
     };
 
     return (
-        <SafeAreaView className="flex-col items-center">
-            <View className="h-20"></View>
-            <View className="border rounded-lg h-[500px] w-[80%] max-w-[400px] bg-primary-light justify-center items-center">
-                <AntDesign name="play" size={50} color="black" />
-            </View>
-            <View className="h-20"></View>
-            <View className="">
-                <Text className="text-lg">
-                    Enter a Conversation Name to start a new conversation
-                </Text>
-            </View>
-            <View className="h-6" />
-            <TextInput
-                className="px-4 py-1 rounded outline-primary border border-primary text-lg"
-                placeholderTextColor={colors.primary.DEFAULT}
-                value={conversationName}
-                onChangeText={setConversationName}
-            />
-            <View className="h-6" />
-            <TouchableOpacity
-                className="bg-primary rounded px-4 py-2"
-                onPress={handleStart}
-            >
-                <Text className="text-white text-lg">Start</Text>
-            </TouchableOpacity>
+        <SafeAreaView className="flex-1 bg-primary-dark">
+            <ScrollView className="flex-col" contentContainerClassName="items-center">
+                <View className="h-20"></View>
+                <View className="border rounded-lg h-[500px] w-[80%] max-w-[400px] bg-primary-light justify-center items-center">
+                    <AntDesign name="play" size={50} color="black" />
+                </View>
+                <View className="h-20"></View>
+                <View className="">
+                    <Text className="text-lg">
+                        Enter a Conversation Name to start a new conversation
+                    </Text>
+                </View>
+                <View className="h-6" />
+                <TextInput
+                    className="px-4 py-1 rounded outline-primary border border-primary text-lg"
+                    placeholderTextColor={colors.primary.DEFAULT}
+                    value={conversationName}
+                    onChangeText={setConversationName}
+                />
+                <View className="h-6" />
+                <TouchableOpacity
+                    className="bg-primary rounded px-4 py-2"
+                    onPress={handleStart}
+                >
+                    <Text className="text-white text-lg">Start</Text>
+                </TouchableOpacity>
+            </ScrollView>
         </SafeAreaView>
     );
 }
